@@ -75,6 +75,8 @@ static uint8_t Joystick_Read(void)
   */
 int main(void)
 {
+  // pointless change
+
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
