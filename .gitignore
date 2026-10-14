@@ -1,3 +1,47 @@
-build
+# ===== Build output =====
+/build/
+/cmake-build-*/
 mx.scratch
+
+# Compiler/linker intermediate & output files (in case of a build outside /build)
+*.o
+*.obj
+*.d
+*.su
+*.i
+*.ii
+*.map
+*.elf
+*.bin
+*.hex
+*.list
+*.lst
+
+# ===== CMake =====
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+# CMakeUserPresets.json is meant to hold machine-specific paths/overrides; never commit it
+CMakeUserPresets.json
+
+# ===== VS Code / STM32Cube extension local, per-machine state =====
+.vscode/ipch/
+.vscode/browse.vc.db*
+*.code-workspace
+
+# ===== OS junk files =====
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== Editor backups =====
+*~
+*.swp
+*.swo
+
 !.settings
